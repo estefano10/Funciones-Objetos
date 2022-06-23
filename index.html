@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <h1>PROBANDO FUNCIONES JAVASCRIPT </h1>
+    <script>
+        //   1- Crear una función que muestre por consola un número pasado por parámetro
+        // function mostrarNum(num){
+        //     alert(num);
+        // }
+        // mostrarNum(5);
+        // console.log(num);
+        
+
+        // mostrarNum();
+        //   2- Crear una función para sumar dos números mediante la función flecha y muestre el resultado por consola
+        // const sumar = (a, b) => a + b
+        // console.log(sumar(10, 5));
+        
+        // sumar();
+        //  3- Crear una función flecha que muestre mediante consola el nombre y apellido de una persona, pasado por parámetros
+        // const fullName = (a, b) => a + b
+        // console.log(fullName('Estefano',+' '+ 'Gigena'));
+        
+        // fullName();
+
+        // 4- Crear una función flecha que muestre mediante consola si el número ingresado por parámetro es positivo o negativo
+            // const analizar = (numero) => {
+            //     if (numero > 0){
+            //         return("NUMERO POSITIVO");
+
+            //     }
+            //     else{
+            //         return("NUMERO NEGATIVO"); 
+            //     }
+            // }
+            // console.log(analizar(-1000));
+            // analizar();
+
+        // ****************************************************OBJETOS**************************************************
+//         1- Crear una clase para un conjunto de productos cuyas propiedades son: nombre, precio y stock
+                class Producto{
+                    constructor(nombre, precio, stock){
+                        this.nombre = nombre;
+                        this.precio = precio;
+                        this.stock = stock;
+                    }
+    // 2- Crear un método que permita en los objetos de esta clase disminuir el stock cuando el usuario realiza una compra                
+                    manejarStock(cantidad){
+                    // this.stock += -1;
+                    this.stock = this.stock - cantidad;
+                    }
+
+                }
+                const compra1 = new Producto('Fideos', 80, 100)
+                console.log(compra1);
+
+                    
+                
+    // 3- Crear un objeto a partir de dicha clase a la cual apliques el método creado
+                compra1.manejarStock(3)
+                console.log(compra1);
+// 4- Crear un método que permita en los objetos de esta clase
+// disminuir el stock cuando el usuario realiza la compra de 3 productos del stock
+// disponible
+// find, filter, map
+
+
+
+    </script>
+</body>
+</html>
